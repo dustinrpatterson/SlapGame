@@ -1,8 +1,8 @@
 var currentDrive = 0;
-var pass
-var rush
-var hailMary
-var turnover
+var pass = Math.round(Math.random() * 20 + 0);
+var rush = Math.round(Math.random() * 10 + 0);
+var hailMary = Math.round(Math.random() * 80 + 0);
+
 
 function callPass(){
     currentDrive += pass
@@ -22,7 +22,7 @@ function callHailMary(){
     return currentDrive
 }
 
-function callTurnover(){
+function turnover(){
     currentDrive = 0
     update()
 }
@@ -34,5 +34,7 @@ function update(){
     if (currentDrive >= 100){
         currentDrive = 100
     }
+    var currentDriveElement = document.getElementById('currentDrive')
+    currentDriveElement.innerHTML = currentDrive
 
 }
