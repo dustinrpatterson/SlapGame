@@ -1,40 +1,48 @@
+//add a stat for yards off last play
+
 var currentDrive = 0;
-var pass = Math.round(Math.random() * 20 + 0);
-var rush = Math.round(Math.random() * 10 + 0);
-var hailMary = Math.round(Math.random() * 80 + 0);
+var playsCalled = 0;
+var pass
+var rush
+var hailMary
 
 
 function callPass(){
-    currentDrive += pass
+    currentDrive += Math.floor(Math.random() * 20);
+    playsCalled++;
     update()
     return currentDrive
 }
 
 function callRush(){
-    currentDrive += rush
+    currentDrive += Math.floor(Math.random() * 10);
+    playsCalled++;
     update()
     return currentDrive
 }
 
 function callHailMary(){
-    currentDrive += hailMary
+    currentDrive += Math.floor(Math.random() * 80);
+    playsCalled++;
     update()
     return currentDrive
 }
 
 function turnover(){
     currentDrive = 0
+    playsCalled = 0
     update()
 }
 
-
-
-
 function update(){
     if (currentDrive >= 100){
-        currentDrive = 100
+        currentDrive = 100;
     }
     var currentDriveElement = document.getElementById('currentDrive')
-    currentDriveElement.innerHTML = currentDrive
+    currentDriveElement.innerHTML = "Total Yards Gained = " + currentDrive
+
+    var playsCalledElement = document.getElementById('numberOfPlays')
+    playsCalledElement.innerHTML = "Plays called in current drive = " + playsCalled
 
 }
+

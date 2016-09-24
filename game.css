@@ -1,8 +1,11 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
 
-/*.panel-body{
-    background-image: url(http://www.netpicks.com/wp-content/uploads/2015/06/field.jpg);
+.panel-body{
+    background-image: url(http://www.netpicks.com/wp-content/uploads/2015/06/field.jpg);*/
+    background-position: center center;
+    /*background-position-y: center; */
+    background-attachment:fixed;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}*/
+
+}
