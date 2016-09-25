@@ -52,3 +52,5 @@ function update(){
     playsCalledElement.innerHTML = "Plays called in current drive = " + playsCalled
 
 }
+
+//if(currentDrive=100) getElementById = gif
