@@ -1,4 +1,6 @@
 //add a stat for yards off last play
+//could I add a turnover for value 0? that resets game?
+
 
 var currentDrive = 0;
 var playsCalled = 0;
