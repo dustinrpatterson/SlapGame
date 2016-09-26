@@ -43,7 +43,7 @@ function newDrive(){
 
 function update(){
     if (currentDrive >= 100){
-        currentDrive = 100
+        currentDrive = 100;
     }
     var currentDriveElement = document.getElementById('currentDrive')
     currentDriveElement.innerHTML = "Total Yards Gained = " + currentDrive
@@ -51,6 +51,8 @@ function update(){
     var playsCalledElement = document.getElementById('numberOfPlays')
     playsCalledElement.innerHTML = "Plays called in current drive = " + playsCalled
 
-}
+   }
+
+   
 
 //if(currentDrive=100) getElementById = gif
